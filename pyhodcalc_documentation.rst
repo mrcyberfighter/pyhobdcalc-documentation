@@ -33,11 +33,11 @@ bintoint
     
         * Minimal represented value: -9223372036854775808. 
     
-        Corresponding to the C type: :ctype:`long long int`
+        Corresponding to the C type: :c:type:`long long int`
     
     :raise OverflowError: If the binar string represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the binar string is not in the format: [-][0b][01].
     
@@ -56,11 +56,11 @@ octtoint
     
         * Minimal represented value: -9223372036854775808. 
     
-        Corresponding to the C type: :ctype:`long long int`
+        Corresponding to the C type: :c:type:`long long int`
     
     :raise OverflowError: If the octal string represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the octal string is not in the format: [-][0][0-7].    
     
@@ -80,11 +80,11 @@ hextoint
     
         * Minimal represented value: -9223372036854775808. 
     
-        Corresponding to the C type: :ctype:`long long int`
+        Corresponding to the C type: :c:type:`long long int`
     
     :raise OverflowError: If the hexadecimal string represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the hexadecimal string is not in the format: [-][0x][0-9A-Fa-f].
     
@@ -102,12 +102,12 @@ binfloattofloat
     
     The binar string must be in form: [-][0b][01][.][01] (the \"0b\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     
     :raise OverflowError: If the binar string integer part represent an value greater as 9223372036854775807 or littler as -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the binar string is not in the format: [-][0b][01].[01].
   
@@ -121,13 +121,13 @@ octfloattofloat
     
     The octal string must be in form: [-][0][0-7][.][0-7] (the \"0\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     
     
     :raise OverflowError: If the octal string integer part represent an value greater as 9223372036854775807 or littler as -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the octal string is not in the format: [-][0][0-7][.][0-7]. 
    
@@ -142,12 +142,12 @@ hexfloattofloat
     
     The hexadecimal string must be in form: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     
     :raise OverflowError: If the hexadecimal string integer part represent an value greater as 9223372036854775807 or littler as -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError:    If the hexadecimal string is not in the format: [-][0x][0-9A-Fa-f].[0-9A-Fa-f].       
     
@@ -175,11 +175,11 @@ binaddbin
     
     :raise OverflowError: If the binar strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the binar strings addition result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].
     
@@ -199,11 +199,11 @@ binsubbin
     
     :raise OverflowError: If the binar strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the binar strings substraction result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].
     
@@ -223,11 +223,11 @@ binmultbin
     
     :raise OverflowError: If the binar strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the binar strings product result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].
     
@@ -241,15 +241,15 @@ bindivbin
     
     The binar strings must be in form: [-][0b][01] (the \"0b\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the binar strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the binar strings quotient result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
        
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].       
     
@@ -273,11 +273,11 @@ octaddoct
     
     :raise OverflowError: If the octal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the octal strings addition result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].
     
@@ -297,11 +297,11 @@ octsuboct
     
     :raise OverflowError: If the octal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the octal strings substraction result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].
     
@@ -321,11 +321,11 @@ octmultoct
     
     :raise OverflowError: If the octal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the octal strings product result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].
     
@@ -339,15 +339,15 @@ octdivoct
     
     The octal strings must be in form: [-][0][0-7] (the \"0\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the octal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the octal strings quotient result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
        
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].       
     
@@ -371,11 +371,11 @@ hexaddhex
     
     :raise OverflowError: If the hexadecimal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the hexadecimal strings addition result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f].
     
@@ -395,11 +395,11 @@ hexsubhex
     
     :raise OverflowError: If the hexadecimal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the hexadecimal strings substraction result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f].
     
@@ -419,11 +419,11 @@ hexmulthex
     
     :raise OverflowError: If the hexadecimal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the hexadecimal strings product result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f].
     
@@ -437,15 +437,15 @@ hexdivhex
     
     The hexadecimal strings must be in form: [-][0x][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the hexadecimal strings represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise OverflowError: If the hexadecimal strings quotient result is greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int` 
+    Corresponding to the range of the C type: :c:type:`long long int` 
        
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f].        
         
@@ -467,7 +467,7 @@ binfloataddbinfloat
     
     The binar strings must be in form: [-][0b][01].[01] (the \"0b\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -475,11 +475,11 @@ binfloataddbinfloat
         
     The entire binar string can contains 128 binary digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the binar strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].[01].
  
@@ -493,7 +493,7 @@ binfloatsubbinfloat
     
     The binar strings must be in form: [-][0b][01].[01] (the \"0b\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -501,11 +501,11 @@ binfloatsubbinfloat
         
     The entire binar string can contains 128 binary digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the binar strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].[01].
  
@@ -519,7 +519,7 @@ binfloatmultbinfloat
     
     The binar strings must be in form: [-][0b][01].[01] (the \"0b\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -527,11 +527,11 @@ binfloatmultbinfloat
         
     The entire binar string can contains 128 binary digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the binar strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].[01].  
   
@@ -545,7 +545,7 @@ binfloatdivbinfloat
     
     The binar strings must be in form: [-][0b][01].[01] (the \"0b\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -553,11 +553,11 @@ binfloatdivbinfloat
         
     The entire binar string can contains 128 binary digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the binar strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the binar strings are not in the format: [-][0b][01].[01]. 
     
@@ -575,7 +575,7 @@ octfloataddoctfloat
     
     The octal strings must be in form: [-][0][0-7].[0-7] (the \"0\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -583,11 +583,11 @@ octfloataddoctfloat
         
     The entire octal string can contains 48 octal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the octal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].[0-7].
  
@@ -601,7 +601,7 @@ octfloatsuboctfloat
     
     The octal strings must be in form: [-][0][0-7].[0-7] (the \"0\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -609,11 +609,11 @@ octfloatsuboctfloat
         
     The entire octal string can contains 48 octal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the octal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].[0-7].
  
@@ -627,7 +627,7 @@ octfloatmultoctfloat
     
     The octal strings must be in form: [-][0][0-7].[0-7] (the \"0\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -635,11 +635,11 @@ octfloatmultoctfloat
         
     The entire octal string can contains 48 octal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the octal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].[0-7].  
   
@@ -653,7 +653,7 @@ octfloatdivoctfloat
     
     The octal strings must be in form: [-][0][0-7].[0-7] (the \"0\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -661,11 +661,11 @@ octfloatdivoctfloat
         
     The entire octal string can contains 48 octal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the octal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the octal strings are not in the format: [-][0][0-7].[0-7].            
         
@@ -683,7 +683,7 @@ hexfloataddhexfloat
     
     The hexadecimal strings must be in form: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -691,11 +691,11 @@ hexfloataddhexfloat
         
     The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the hexadecimal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f].
  
@@ -709,7 +709,7 @@ hexfloatsubhexfloat
     
     The hexadecimal strings must be in form: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -717,11 +717,11 @@ hexfloatsubhexfloat
         
     The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the hexadecimal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f].
  
@@ -735,7 +735,7 @@ hexfloatmulthexfloat
     
     The hexadecimal strings must be in form: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -743,11 +743,11 @@ hexfloatmulthexfloat
         
     The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the hexadecimal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f].  
   
@@ -761,7 +761,7 @@ hexfloatdivhexfloat
     
     The hexadecimal strings must be in form: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f] (the \"0x\" identifier is optional). 
     
-    The function can threads 8 bytes values for the integer part from the float, in the C type :ctype:`long long int` value range:
+    The function can threads 8 bytes values for the integer part from the float, in the C type :c:type:`long long int` value range:
     
         * Maximal integer part value:  9223372036854775807.
     
@@ -769,11 +769,11 @@ hexfloatdivhexfloat
         
     The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.). 
     
-    The returned result is limited to the C type :ctype:`double`: 15 digits precision. But the module compute internally with the C type :ctype:`long double`.
+    The returned result is limited to the C type :c:type:`double`: 15 digits precision. But the module compute internally with the C type :c:type:`long double`.
     
     :raise OverflowError: If the hexadecimal strings integer part represent an value greater than 9223372036854775807 or littler than -9223372036854775808.
     
-    Corresponding to the range of the C type: :ctype:`long long int`
+    Corresponding to the range of the C type: :c:type:`long long int`
     
     :raise ValueError: If the hexadecimal strings are not in the format: [-][0x][0-9A-Fa-f][.][0-9A-Fa-f].     
     
